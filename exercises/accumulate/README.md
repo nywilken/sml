@@ -25,21 +25,34 @@ Keep your hands off that collect/map/fmap/whatchamacallit functionality
 provided by your standard library!
 Solve this one yourself using other basic tools instead.
 
-Lisp specific: it's perfectly fine to use `MAPCAR` or the equivalent,
-as this is idiomatic Lisp, not a library function.
+## Loading your exercise implementation in PolyML
+
+```
+$ poly --use {exercise}.sml
+```
+
+Or:
+
+```
+$ poly
+> use "{exercise}.sml";
+```
+
+**Note:** You have to replace {exercise}.
 
 ## Running the tests
 
-Even though there are multiple implementations, we encourage to use Poly/ML.
-
 ```
-$ poly -q < test_{ exercise }.sml
+$ poly -q --use test.sml
 ```
 
-If you want to start an interactive session:
-```
-$ poly --use test_{ exercise }.sml
-```
+## Feedback, Issues, Pull Requests
+
+The [exercism/sml](https://github.com/exercism/sml) repository on
+GitHub is the home for all of the Standard ML exercises.
+
+If you have feedback about an exercise, or want to help implementing a new
+one, head over there and create an issue. We'll do our best to help you!
 
 ## Source
 
